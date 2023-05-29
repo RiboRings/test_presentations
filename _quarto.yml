@@ -1,3 +1,7 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - index.qmd
+    - hintikkaxo_presentation.qmd
+    - another_pres.qmd
