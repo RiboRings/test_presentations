@@ -1,24 +1,10 @@
 [
   {
-    "objectID": "another_pres.html#quarto",
-    "href": "another_pres.html#quarto",
-    "title": "another_pres",
-    "section": "Quarto",
-    "text": "Quarto\nQuarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see https://quarto.org/docs/presentations/."
-  },
-  {
-    "objectID": "another_pres.html#bullets",
-    "href": "another_pres.html#bullets",
-    "title": "another_pres",
-    "section": "Bullets",
-    "text": "Bullets\nWhen you click the Render button a document will be generated that includes:\n\nContent authored with markdown\nOutput from executable code"
-  },
-  {
-    "objectID": "another_pres.html#code",
-    "href": "another_pres.html#code",
-    "title": "another_pres",
-    "section": "Code",
-    "text": "Code\nWhen you click the Render button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n\n[1] 2"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "presentation List",
+    "section": "",
+    "text": "presentation 1\npresentation 2"
   },
   {
     "objectID": "hintikkaxo_presentation.html#study-design",
@@ -47,5 +33,26 @@
     "title": "A brief introduction to HintikkaXOData",
     "section": "Biomarkers",
     "text": "Biomarkers\n\nBiomarkers data were obtained by Western blot from protein homogenates of rat tissues. There is a total of 39 features, corresponding to the biomarkers/site combinations.\n\n\n\n\n\n\n\n\n\n\n\n\nBiomarker\nFunction\n\n\n\n\nCS\ncitrate synthase\n\n\nAST\naspartate aminotransferase\n\n\nALT\nalanine aminotransferase\n\n\nERK\nextracellular signal-regulated kinase\n\n\nIRS1\ninsulin receptor substrate 1\n\n\nAKT\nprotein kinase B\n\n\nIL1b\ninterleukin 1 beta\n\n\nHAD\n3-hydroxyacyl-CoA dehydrogenase 8\n\n\nCD45\nprotein tyrosine phosphatase\n\n\n\n\n\n\n\n\n\n\n\nName\nSite\n\n\n\n\nepi\nepididymal adipose tissue\n\n\nSCfat\nmesenteric adopose tissue\n\n\nmese\nsubcutaneous adipose tissue\n\n\nliver\nliver\n\n\ngastro\ngastrocnemius muscle\n\n\nserum\nserum"
+  },
+  {
+    "objectID": "another_pres.html#quarto",
+    "href": "another_pres.html#quarto",
+    "title": "another_pres",
+    "section": "Quarto",
+    "text": "Quarto\nQuarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see https://quarto.org/docs/presentations/."
+  },
+  {
+    "objectID": "another_pres.html#bullets",
+    "href": "another_pres.html#bullets",
+    "title": "another_pres",
+    "section": "Bullets",
+    "text": "Bullets\nWhen you click the Render button a document will be generated that includes:\n\nContent authored with markdown\nOutput from executable code"
+  },
+  {
+    "objectID": "another_pres.html#code",
+    "href": "another_pres.html#code",
+    "title": "another_pres",
+    "section": "Code",
+    "text": "Code\nWhen you click the Render button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n\n[1] 2"
   }
 ]
