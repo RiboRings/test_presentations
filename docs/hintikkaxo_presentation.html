@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="another_pres_files/libs/clipboard/clipboard.min.js"></script>
-<script src="another_pres_files/libs/quarto-html/tabby.min.js"></script>
-<script src="another_pres_files/libs/quarto-html/popper.min.js"></script>
-<script src="another_pres_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="another_pres_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="another_pres_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="another_pres_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.475">
 
-  <title>another_pres</title>
+  <title>A brief introduction to HintikkaXOData</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="another_pres_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="another_pres_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,11 +28,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="another_pres_files/libs/revealjs/dist/theme/quarto.css" id="theme">
-  <link href="another_pres_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="another_pres_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="another_pres_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="another_pres_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -323,32 +323,264 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">another_pres</h1>
+  <h1 class="title">A brief introduction to HintikkaXOData</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="quarto" class="slide level2">
-<h2>Quarto</h2>
-<p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
-</section>
-<section id="bullets" class="slide level2">
-<h2>Bullets</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes:</p>
-<ul>
-<li>Content authored with markdown</li>
-<li>Output from executable code</li>
-</ul>
-</section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
+<section id="study-design" class="slide level2">
+<h2>Study design</h2>
+<div class="fragment">
+<p>HintikkaXOData is a MultiAssayExperiment containing microbiome, metabolome and biomarker data from a study on the effects of diet and prebiotics on fatty-liver disease in rats.</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<pre><code>ExperimentList class object of length 3:
+ [1] microbiota: TreeSummarizedExperiment with 12706 rows and 40 columns
+ [2] metabolites: TreeSummarizedExperiment with 38 rows and 40 columns
+ [3] biomarkers: TreeSummarizedExperiment with 39 rows and 40 columns</code></pre>
 </div>
 </div>
+</div>
+<div class="fragment">
+<p>The rat population (N = 40) was divided into 4 groups (n = 10), which underwent different diets over a period of 12 weeks. The 4 groups included:</p>
+<div class="columns">
+<div class="column" style="width:55%;">
+<ul>
+<li><p>high-fat diet without prebiotics</p></li>
+<li><p>high-fat diet with prebiotics</p></li>
+<li><p>low-fat diet without prebiotics</p></li>
+<li><p>low-fat diet with prebiotics</p></li>
+</ul>
+</div><div class="column" style="width:45%;">
+<div class="cell">
+<div class="cell-output-display">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">XOS+</th>
+<th style="text-align: right;">XOS-</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Low Fat</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">High Fat</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>XOS: xylooligosaccharide</p>
+</div>
+</div>
+</section>
+<section id="microbiota" class="slide level2">
+<h2>Microbiota</h2>
+<div class="fragment">
+<p>Microbiome data was obtained by 16S rRNA gene sequencing of bacterial DNA sampled from the cecum of terminated rats. Then, sequence reads were assembled into operational taxonomic units (OTUs).</p>
+</div>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:45%;">
+<div class="cell">
+
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Relative Abundance (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Bacteroidetes</td>
+<td style="text-align: right;">0.5127085</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Firmicutes</td>
+<td style="text-align: right;">0.3946292</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Verrucomicrobia</td>
+<td style="text-align: right;">0.0382245</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cyanobacteria</td>
+<td style="text-align: right;">0.0260305</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Proteobacteria</td>
+<td style="text-align: right;">0.0224238</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div><div class="column" style="width:55%;">
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-diversity" class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="hintikkaxo_presentation_files/figure-revealjs/fig-diversity-1.png" width="960"></p>
+<p></p><figcaption>Figure&nbsp;1: <strong>?(caption)</strong></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="metabolites" class="slide level2">
+<h2>Metabolites</h2>
+<p>Metabolome data was obtained from the same cecal samples by nuclear magnetic resonance (NMR) spectroscopy. There is a total of 38 features, corresponding to the different metabolites.</p>
+<div class="cell">
+
+</div>
+<div class="fragment">
+<div class="cell">
+
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="hintikkaxo_presentation_files/figure-revealjs/unnamed-chunk-13-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="biomarkers" class="slide level2">
+<h2>Biomarkers</h2>
+<div class="fragment">
+<p>Biomarkers data were obtained by Western blot from protein homogenates of rat tissues. There is a total of 39 features, corresponding to the biomarkers/site combinations.</p>
+<div class="cell">
+
+</div>
+</div>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="cell">
+<div class="cell-output-display">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Biomarker</th>
+<th style="text-align: left;">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">CS</td>
+<td style="text-align: left;">citrate synthase</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AST</td>
+<td style="text-align: left;">aspartate aminotransferase</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ALT</td>
+<td style="text-align: left;">alanine aminotransferase</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ERK</td>
+<td style="text-align: left;">extracellular signal-regulated kinase</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">IRS1</td>
+<td style="text-align: left;">insulin receptor substrate 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AKT</td>
+<td style="text-align: left;">protein kinase B</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">IL1b</td>
+<td style="text-align: left;">interleukin 1 beta</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HAD</td>
+<td style="text-align: left;">3-hydroxyacyl-CoA dehydrogenase 8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CD45</td>
+<td style="text-align: left;">protein tyrosine phosphatase</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div><div class="column" style="width:45%;">
+<div class="cell">
+<div class="cell-output-display">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Site</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">epi</td>
+<td style="text-align: left;">epididymal adipose tissue</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SCfat</td>
+<td style="text-align: left;">mesenteric adopose tissue</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mese</td>
+<td style="text-align: left;">subcutaneous adipose tissue</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">liver</td>
+<td style="text-align: left;">liver</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">gastro</td>
+<td style="text-align: left;">gastrocnemius muscle</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">serum</td>
+<td style="text-align: left;">serum</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="the-end" class="title-slide slide level1 center">
+<h1>The end</h1>
+
 <div class="footer footer-default">
 
 </div>
@@ -357,19 +589,19 @@
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="another_pres_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="another_pres_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="another_pres_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="another_pres_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="another_pres_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="another_pres_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="another_pres_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="another_pres_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="another_pres_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="another_pres_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -379,13 +611,13 @@
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
+'smaller': true,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'smaller': false,
+'smaller': true,
  
         // Display controls in the bottom right corner
         controls: false,
